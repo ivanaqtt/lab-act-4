@@ -1,0 +1,91 @@
+/* style.css - simple styling for the inventory dashboard */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select,
+.controls button {
+  padding: 8px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.controls button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.controls button:hover {
+  background-color: #3a7bc8;
+}
+
+.summary {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.summary-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.summary-label {
+  font-weight: bold;
+}
+
+#noResultsMessage {
+  text-align: center;
+  color: gray;
+}
+
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 220px;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.status.in-stock {
+  color: green;
+}
+
+.status.low-stock {
+  color: orange;
+}
+
+.status.out-of-stock {
+  color: red;
+}
